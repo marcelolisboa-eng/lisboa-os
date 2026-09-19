@@ -4,6 +4,42 @@
 :root{--g:#176b3a;--gd:#103b29;--bg:#f2f5f3;--line:#d8dfdb}*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:#17201b}.top{background:var(--gd);color:white;padding:18px 16px}.top h1{margin:0;font-size:22px}.topinner{max-width:1000px;margin:auto;display:flex;align-items:center;gap:14px}.toplogo{width:72px;height:72px;object-fit:contain;border-radius:50%;background:#fff}.brandlogo{width:115px;height:115px;object-fit:contain;flex:none}.top small{opacity:.85}.wrap{max-width:1000px;margin:auto;padding:14px}.card{background:white;border-radius:14px;padding:16px;margin-bottom:14px;box-shadow:0 2px 12px #0001}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.full{grid-column:1/-1}label{font-size:12px;font-weight:700;color:#405047}input,select,textarea{width:100%;padding:11px;border:1px solid #ccd6d0;border-radius:9px;margin-top:5px;font:inherit}textarea{min-height:70px}.btn{border:0;border-radius:9px;padding:11px 14px;font-weight:700;cursor:pointer}.primary{background:var(--g);color:white}.dark{background:var(--gd);color:white}.ghost{background:#e8eeea}.danger{background:#f7e7e7}.actions{display:flex;gap:8px;flex-wrap:wrap}.service{border:1px solid var(--line);border-radius:10px;padding:10px;margin:10px 0}.servicegrid{display:grid;grid-template-columns:90px 1fr 2fr;gap:8px}.history-item{padding:10px;border-bottom:1px solid var(--line);cursor:pointer}.history-item:hover{background:#f5f8f6}
 #print{display:none}.a4{background:#fff;color:#18211c;width:210mm;min-height:297mm;padding:14mm 15mm;margin:auto;font-size:10.5pt}.brand{display:flex;justify-content:space-between;border-bottom:3px solid var(--g);padding-bottom:8px}.brand h1{color:var(--gd);margin:0;font-size:24pt}.brand .tag{color:var(--g);font-weight:700}.regs{margin-top:6px;font-size:8.5pt}.osbar{margin-top:12px;background:var(--gd);color:#fff;padding:9px 12px;border-radius:7px;display:flex;justify-content:space-between;font-weight:700}.section{margin-top:12px}.sectitle{background:var(--g);color:#fff;padding:6px 9px;border-radius:5px;font-weight:700}.data{display:grid;grid-template-columns:1fr 1fr;gap:5px 16px;padding:8px;border:1px solid var(--line);border-top:0}.data div{padding:3px}.ptable{width:100%;border-collapse:collapse}.ptable th,.ptable td{border:1px solid #cad4ce;padding:6px;vertical-align:top}.ptable th{background:#edf5f0}.total{margin-top:10px;background:#eaf6ee;border:1px solid #bcd8c5;padding:10px;text-align:right;font-size:15pt;font-weight:700;color:var(--gd)}.obs{border:1px solid var(--line);padding:9px;min-height:48px;white-space:pre-wrap}.signs{display:grid;grid-template-columns:1fr 1fr;gap:45px;margin-top:35px;text-align:center}.sign{border-top:1px solid #333;padding-top:5px}.thanks{text-align:center;margin-top:25px;font-size:18pt;font-style:italic;color:var(--g)}.foot{text-align:center;margin-top:12px;border-top:2px solid var(--g);padding-top:8px;font-size:8.5pt}
 @media(max-width:700px){.grid,.servicegrid{grid-template-columns:1fr}.full{grid-column:auto}}@media print{body{background:#fff}.top,.wrap{display:none!important}#print{display:block}.a4{margin:0;box-shadow:none;width:auto;min-height:auto;padding:10mm}@page{size:A4;margin:0}}
+</style><style>
+:root{--lime:#18c51c;--deep:#002f31;--ink:#07132b}
+#print .a4{position:relative;overflow:hidden;padding:8mm 7mm 14mm;background:linear-gradient(135deg,#fff 0%,#fff 58%,#f4fff4 100%);font-family:Arial,sans-serif;color:var(--ink)}
+#print .hero{display:grid;grid-template-columns:38% 62%;gap:5mm;align-items:center}
+#print .hero-logo{display:flex;align-items:center;justify-content:center;border-right:2px solid #18c51c;padding-right:5mm}
+#print .hero-logo img{width:100%;max-width:72mm;height:42mm;object-fit:contain}
+#print .hero-right{display:grid;grid-template-columns:1fr 35mm;gap:4mm;align-items:start}
+#print .who{font-size:10pt;line-height:1.45}
+#print .who strong{display:block;font-size:19pt;color:#070b18;line-height:1}
+#print .who .sub{font-size:11pt;font-weight:700;margin-bottom:3mm}
+#print .slogan{font-family:cursive;font-size:15pt;line-height:1.05;text-align:center;transform:rotate(-4deg);padding-top:2mm}
+#print .regrow{grid-column:1/-1;border-top:1.5px solid #18c51c;margin-top:2mm;padding-top:2.5mm;display:grid;grid-template-columns:repeat(3,1fr);gap:2mm}
+#print .regcard{display:flex;align-items:center;gap:2mm;border-right:1px solid #8aa0ad;padding-right:2mm;font-size:7.4pt;line-height:1.2}
+#print .regcard:last-child{border-right:0}
+#print .regcard img{width:11mm;height:11mm;object-fit:contain}
+#print .regcard b{display:block;font-size:8pt;color:#050913}
+#print .osbar{background:linear-gradient(90deg,#002f31,#001e27);border-radius:3mm;padding:3mm 5mm;font-size:15pt;letter-spacing:2px}
+#print .osbar .osmeta{letter-spacing:0;font-size:10pt}
+#print .sectitle{background:linear-gradient(90deg,#17c71d,#08a918);border-radius:3mm 3mm 0 0;padding:2.3mm 4mm;font-size:10pt;letter-spacing:.7px}
+#print .data{border:1px solid #7891a6;border-radius:0 0 2mm 2mm;padding:3mm 4mm;gap:2mm 7mm}
+#print .ptable{font-size:8.4pt}
+#print .ptable th{background:#f1f4f3;color:#07132b;font-size:8.7pt}
+#print .ptable th,#print .ptable td{border-color:#7891a6;padding:2.2mm 2.5mm}
+#print .bottomgrid{display:grid;grid-template-columns:1fr 46mm;gap:2mm;margin-top:3mm;align-items:stretch}
+#print .obswrap{border:1px solid #7891a6;border-radius:3mm;padding:2.5mm 3mm}
+#print .obswrap b{font-size:9pt;color:#050913}
+#print .obs{border:0;border-bottom:1px solid #8ba0b0;padding:1.5mm 0;min-height:22mm;font-size:8.5pt}
+#print .total{margin:0;border:0;border-radius:3mm;background:linear-gradient(135deg,#e9ffe5,#d9f5d3);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:#06110a}
+#print .total small{font-size:9pt}.total span{font-size:24pt}
+#print .conditions{font-size:7.5pt;line-height:1.35;margin:3mm 1mm 0}
+#print .conditions b{font-size:8pt;border-left:2px solid #19c51d;padding-left:2mm}
+#print .signs{margin-top:8mm;gap:10mm;font-size:8pt}
+#print .thanks{text-align:left;font-family:cursive;font-size:18pt;color:#061326;margin:7mm 0 1mm 3mm;transform:rotate(-3deg)}
+#print .foot{position:absolute;left:0;right:0;bottom:0;height:14mm;margin:0;border:0;background:linear-gradient(165deg,#0bda21 0 18%,#003b36 19% 100%);color:#fff;display:flex;justify-content:space-between;align-items:flex-end;padding:6mm 7mm 2mm;font-size:7.2pt}
+#print .foot strong{color:#d8ff1c;letter-spacing:.5px}
+@media print{*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}#print .a4{height:297mm;min-height:297mm}}
 </style></head><body>
 <header class="top"><div class="topinner"><img class="toplogo" src="logo.png.png" alt="Lisboa Soluções Integradas"><div><h1>Lisboa Soluções Integradas</h1><small>Gerador de Ordem de Serviço</small></div></div></header>
 <main class="wrap"><section class="card"><div class="grid">
@@ -14,14 +50,35 @@
 <section class="card"><div class="grid"><div class="full"><label>Observações</label><textarea id="notes"></textarea></div><div><label>Visita / diagnóstico (R$)</label><input id="visit" type="number" step="0.01" value="0"></div><div><label>Materiais / adicionais (R$)</label><input id="extras" type="number" step="0.01" value="0"></div><div class="full"><label>Total (R$)</label><input id="total" type="number" step="0.01" value="0"></div></div></section>
 <section class="card actions"><button class="btn primary" onclick="saveOS()">Salvar OS</button><button class="btn dark" onclick="printOS()">Gerar PDF / Imprimir</button><button class="btn ghost" onclick="newOS()">Nova OS</button></section>
 <section class="card"><h3>Histórico</h3><div id="history"></div></section></main>
-<section id="print"><div class="a4"><div class="brand"><div style="display:flex;align-items:center;gap:10px"><img class="brandlogo" src="logo.png.png" alt="Lisboa Soluções Integradas"><div><b style="font-size:16pt">Marcelo Lisboa</b><br><span class="tag">Soluções Integradas</span><br>Confiança em cada detalhe</div></div><div style="text-align:right"><b>Marcelo Lisboa</b><br>(22) 99984-9586<br>marcelolisboa@live.com<br>PIX: (22) 99984-9586</div></div>
-<div class="regs">MTE: 0074114/RJ • CFT/CRT: 1258882706 • CREA: 201300588-1</div><div class="osbar"><span>ORDEM DE SERVIÇO</span><span id="p_os"></span></div>
-<div class="section"><div class="sectitle">DADOS DO ATENDIMENTO</div><div class="data"><div><b>Cliente:</b> <span id="p_client"></span></div><div><b>Data:</b> <span id="p_date"></span></div><div><b>Tipo:</b> <span id="p_type"></span></div><div><b>Solicitante:</b> <span id="p_requester"></span></div><div style="grid-column:1/-1"><b>Local:</b> <span id="p_location"></span></div></div></div>
-<div class="section"><div class="sectitle">SERVIÇOS EXECUTADOS</div><table class="ptable"><thead><tr><th>Quantidade</th><th>Serviço</th><th>Descrição</th></tr></thead><tbody id="p_services"></tbody></table></div>
-<div class="section"><div class="sectitle">OBSERVAÇÕES</div><div class="obs" id="p_notes"></div></div><div class="total">TOTAL: <span id="p_total"></span></div>
-<div class="section"><b>Condições:</b> Valores referentes aos serviços descritos nesta ordem. Materiais e serviços adicionais somente quando indicados.</div>
-<div class="signs"><div class="sign">Cliente / Responsável</div><div class="sign">Marcelo Lisboa</div></div><div class="thanks">Obrigado pela confiança!</div>
-<div class="foot"><b>AUTOMAÇÃO • TI • ENERGIA • QHSE</b><br>Macaé - RJ | Atendimento em residências, comércios e empresas<br><b>SOLUÇÕES HOJE PARA UM AMANHÃ MAIS SEGURO</b></div></div></section>
+<section id="print"><div class="a4">
+<div class="hero">
+ <div class="hero-logo"><img src="logo.png.png" alt="Lisboa Soluções Integradas"></div>
+ <div class="hero-right">
+  <div class="who"><strong>Marcelo Lisboa</strong><div class="sub">Soluções Integradas</div>☎ &nbsp;(22) 99984-9586<br>✉ &nbsp;marcelolisboa@live.com<br>PIX (celular): (22) 99984-9586</div>
+  <div class="slogan">Confiança<br>em cada<br>detalhe</div>
+  <div class="regrow">
+   <div class="regcard"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Coat_of_arms_of_Brazil_%28variant_1%29_%281%29.svg"><div><b>Registro MTE</b>Técnico de Segurança do Trabalho<br><b>Nº 0074114/RJ</b></div></div>
+   <div class="regcard"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Coat_of_arms_of_Brazil_%28variant_1%29_%281%29.svg"><div><b>Registro CFT/CRT</b>Técnico Industrial<br><b>CRT nº 1258882706</b></div></div>
+   <div class="regcard"><img src="https://www.crea-rj.org.br/wp-content/uploads/2025/10/logomarca-crearj-vertical-1.png"><div><b>Registro CREA</b>Engenheiro / Técnico<br><b>CREA nº 201300588-1</b></div></div>
+  </div>
+ </div>
+</div>
+<div class="osbar"><span>ORDEM DE SERVIÇO</span><span class="osmeta">Nº: <span id="p_os"></span> &nbsp; | &nbsp; DATA: <span id="p_date"></span></span></div>
+<div class="section"><div class="sectitle">DADOS DO ATENDIMENTO</div><div class="data">
+ <div><b>Cliente:</b> <span id="p_client"></span></div><div><b>Tipo:</b> <span id="p_type"></span></div>
+ <div><b>Local:</b> <span id="p_location"></span></div><div><b>Solicitante:</b> <span id="p_requester"></span></div>
+</div></div>
+<div class="section"><div class="sectitle">SERVIÇOS EXECUTADOS</div><table class="ptable"><thead><tr><th style="width:14%">Quantidade</th><th style="width:35%">Serviço</th><th>Descrição</th></tr></thead><tbody id="p_services"></tbody></table></div>
+<div class="bottomgrid">
+ <div class="obswrap"><b>OUTROS SERVIÇOS / OBSERVAÇÕES</b><div class="obs" id="p_notes"></div></div>
+ <div class="total"><small>💲 &nbsp; VALOR TOTAL</small><span id="p_total"></span></div>
+</div>
+<div class="conditions"><b>CONDIÇÕES</b><br>• Serviços executados conforme solicitação.<br>• Garantia válida para os serviços realizados, não cobre mau uso ou intervenções de terceiros.<br>• Dúvidas ou suporte, entre em contato pelos canais acima.</div>
+<div class="signs"><div class="sign">Cliente / Responsável</div><div class="sign">Marcelo Lisboa</div></div>
+<div class="thanks">Obrigado pela confiança!</div>
+<div style="text-align:right;font-size:7pt;letter-spacing:1.4px;margin-right:3mm"><b>AUTOMAÇÃO, TI, ENERGIA E QHSE</b><br>EM PROL DE UM AMBIENTE MAIS SEGURO E PRODUTIVO</div>
+<div class="foot"><span>📍 Macaé - RJ &nbsp; | &nbsp; Atendimento em residências, comércios e empresas</span><strong>SOLUÇÕES HOJE<br>PARA UM AMANHÃ MAIS SEGURO</strong></div>
+</div></section>
 <script>
 const $=id=>document.getElementById(id); const money=v=>(Number(v)||0).toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
 function dateBR(v){if(!v)return'';let [y,m,d]=v.split('-');return d+'/'+m+'/'+y}
