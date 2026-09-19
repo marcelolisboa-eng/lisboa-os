@@ -86,6 +86,12 @@
 #print .hero-logo img{width:100%!important;height:50mm!important;max-width:82mm!important;object-fit:contain!important;object-position:center!important;transform:none!important;mix-blend-mode:normal!important}
 #print .a4:after{width:108mm;height:108mm;left:51mm;top:101mm;background:url("logo3.png") center/contain no-repeat!important;opacity:.035;mix-blend-mode:normal!important}
 @media print{#print .hero-logo img{width:100%!important;height:50mm!important;max-width:82mm!important;transform:none!important}}
+<style>
+/* v8 - logo ocupa a coluna sem cortar */
+#print .hero{grid-template-columns:40% 60%;gap:2.5mm;align-items:center}
+#print .hero-logo{height:55mm;min-height:55mm;padding:0 2mm 0 0;overflow:visible}
+#print .hero-logo img{display:block;width:100%!important;height:55mm!important;max-width:none!important;object-fit:contain!important;object-position:center!important;transform:scale(1.07)!important;transform-origin:center!important}
+@media print{#print .hero-logo img{width:100%!important;height:55mm!important;max-width:none!important;transform:scale(1.07)!important}}
 </style></head><body>
 <header class="top"><div class="topinner"><img class="toplogo" src="logo3.png" alt="Lisboa Soluções Integradas"><div><h1>Lisboa Soluções Integradas</h1><small>Gerador de Ordem de Serviço</small></div></div></header>
 <main class="wrap"><section class="card"><div class="grid">
