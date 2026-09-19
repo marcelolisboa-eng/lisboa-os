@@ -100,6 +100,42 @@
  #print .a4{height:297mm!important;min-height:297mm!important;margin:0!important}
  #print .foot{position:absolute!important;bottom:0!important;left:0!important;right:0!important}
 }
+<style>
+/* v10 - refinamento tipografico e proporcoes profissionais do PDF */
+#print .a4{font-family:Arial,Helvetica,sans-serif;font-size:9.2pt;line-height:1.32;color:#07132b}
+#print .who{font-size:9.2pt;line-height:1.38}
+#print .who strong{font-size:17pt;line-height:1.05;letter-spacing:-.25px}
+#print .who .sub{font-size:10.2pt;line-height:1.15;margin-bottom:2.2mm}
+#print .slogan{font-size:13.5pt;line-height:1.08}
+#print .regcard{font-size:7.2pt;line-height:1.18}
+#print .regcard b{font-size:7.8pt}
+#print .osbar{font-size:13.5pt;letter-spacing:1.8px;padding:3mm 4.5mm}
+#print .osbar .osmeta{font-size:9.2pt;font-weight:700}
+#print .section{margin-top:3mm}
+#print .sectitle{font-size:9.4pt;letter-spacing:.55px;padding:2.15mm 3.5mm}
+#print .data{font-size:8.8pt;line-height:1.32;padding:2.7mm 3.5mm}
+#print .data b{font-size:8.8pt}
+#print .ptable{font-size:8.2pt;line-height:1.28}
+#print .ptable th{font-size:8.2pt;font-weight:700;padding:2mm 2.3mm}
+#print .ptable td{padding:2.15mm 2.3mm}
+#print .obswrap{padding:2.5mm 3mm}
+#print .obswrap>b{font-size:8.4pt;letter-spacing:.15px}
+#print .obs{font-size:8.15pt;line-height:1.32;min-height:20mm}
+#print .total small{font-size:7.7pt;letter-spacing:.15px}
+#print .total b{font-size:10.5pt!important}
+#print .total span{font-size:21pt;line-height:1.05}
+#print .conditions{font-size:7.8pt;line-height:1.42;margin-top:3mm}
+#print .conditions b{font-size:8.4pt}
+#print .signs{font-size:8.1pt;margin-top:8mm}
+#print .thanks{font-size:16.5pt;margin-top:6mm}
+#print .thanks+div{font-size:7.1pt!important;line-height:1.35;letter-spacing:1.05px!important}
+#print .foot{font-size:7.4pt;line-height:1.2;padding-bottom:2.2mm}
+#print .foot strong{font-size:7.6pt;line-height:1.18}
+@media print{
+ #print .a4{font-size:9.2pt!important;line-height:1.32!important}
+ #print .ptable{font-size:8.2pt!important}
+ #print .conditions{font-size:7.8pt!important}
+}
 </style></head><body>
 <header class="top"><div class="topinner"><img class="toplogo" src="logo3.png" alt="Lisboa Soluções Integradas"><div><h1>Lisboa Soluções Integradas</h1><small>Gerador de Ordem de Serviço</small></div></div></header>
 <main class="wrap"><section class="card"><div class="grid">
