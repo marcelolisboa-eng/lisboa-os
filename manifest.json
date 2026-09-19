@@ -1,1 +1,25 @@
-{"name":"Lisboa OS","short_name":"Lisboa OS","start_url":"./","display":"standalone","background_color":"#f2f5f3","theme_color":"#176b3a","description":"Ordens de Serviço - Lisboa Soluções Integradas"}
+{
+  "name": "Lisboa OS",
+  "short_name": "Lisboa OS",
+  "description": "Ordens de Serviço - Lisboa Soluções Integradas",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f2f5f3",
+  "theme_color": "#176b3a",
+  "icons": [
+    {
+      "src": "logo3.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "logo3.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
