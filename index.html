@@ -40,6 +40,28 @@
 #print .foot{position:absolute;left:0;right:0;bottom:0;height:14mm;margin:0;border:0;background:linear-gradient(165deg,#0bda21 0 18%,#003b36 19% 100%);color:#fff;display:flex;justify-content:space-between;align-items:flex-end;padding:6mm 7mm 2mm;font-size:7.2pt}
 #print .foot strong{color:#d8ff1c;letter-spacing:.5px}
 @media print{*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}#print .a4{height:297mm;min-height:297mm}}
+</style><style>
+/* Refinamento visual do PDF: logo maior, simetria e efeitos sutis de papel */
+#print .a4{
+  background:
+    linear-gradient(125deg,transparent 0 12%,rgba(24,197,28,.035) 12% 18%,transparent 18% 63%,rgba(24,197,28,.028) 63% 72%,transparent 72%),
+    linear-gradient(55deg,transparent 0 67%,rgba(0,47,49,.025) 67% 75%,transparent 75%),
+    radial-gradient(circle at 18% 10%,rgba(24,197,28,.035),transparent 25%),
+    #fff;
+}
+#print .a4:before{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:0;opacity:.5;
+  background-image:repeating-linear-gradient(0deg,rgba(0,0,0,.012) 0,rgba(0,0,0,.012) .18mm,transparent .18mm,transparent 1.4mm);
+}
+#print .a4:after{
+  content:"";position:absolute;width:105mm;height:105mm;left:52.5mm;top:103mm;
+  background:url("logo2.png") center/contain no-repeat;opacity:.035;pointer-events:none;z-index:0;
+}
+#print .a4>*,#print .hero{position:relative;z-index:1}
+#print .hero{grid-template-columns:40% 60%;gap:3mm;align-items:stretch}
+#print .hero-logo{padding:0 4mm 0 0;min-height:50mm;overflow:visible}
+#print .hero-logo img{width:100%;height:52mm;max-width:none;object-fit:contain;object-position:center}
+#print .hero-right{align-self:center}
 </style></head><body>
 <header class="top"><div class="topinner"><img class="toplogo" src="logo2.png" alt="Lisboa Soluções Integradas"><div><h1>Lisboa Soluções Integradas</h1><small>Gerador de Ordem de Serviço</small></div></div></header>
 <main class="wrap"><section class="card"><div class="grid">
