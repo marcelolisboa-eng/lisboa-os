@@ -55,7 +55,7 @@
 }
 #print .a4:after{
   content:"";position:absolute;width:105mm;height:105mm;left:52.5mm;top:103mm;
-  background:url("logo2.png") center/contain no-repeat;opacity:.035;pointer-events:none;z-index:0;
+  background:url("logo3.png") center/contain no-repeat;opacity:.035;pointer-events:none;z-index:0;
 }
 #print .a4>*,#print .hero{position:relative;z-index:1}
 #print .hero{grid-template-columns:40% 60%;gap:3mm;align-items:stretch}
@@ -74,13 +74,20 @@
 #print .hero-logo{height:58mm;min-height:58mm;padding:0 2mm 0 0;display:flex;align-items:center;justify-content:center;overflow:hidden}
 #print .hero-logo img{width:116%;height:116%;max-width:none;object-fit:contain;object-position:center;mix-blend-mode:multiply;transform:scale(1.08)}
 #print .hero-right{align-self:center}
-#print .a4:after{width:118mm;height:118mm;left:46mm;top:96mm;opacity:.035;mix-blend-mode:multiply;background-image:url("logo2.png")}
+#print .a4:after{width:118mm;height:118mm;left:46mm;top:96mm;opacity:.035;mix-blend-mode:multiply;background-image:url("logo3.png")}
 @media print{
  #print .hero-logo img{width:116%!important;height:116%!important;max-width:none!important;mix-blend-mode:multiply!important;transform:scale(1.08)!important}
  #print .a4:after{mix-blend-mode:multiply!important}
 }
+<style>
+/* v7 - logo transparente, tamanho equilibrado */
+#print .hero{grid-template-columns:39% 61%;gap:3mm;align-items:center}
+#print .hero-logo{height:51mm;min-height:51mm;padding:0 3mm 0 0;overflow:visible}
+#print .hero-logo img{width:100%!important;height:50mm!important;max-width:82mm!important;object-fit:contain!important;object-position:center!important;transform:none!important;mix-blend-mode:normal!important}
+#print .a4:after{width:108mm;height:108mm;left:51mm;top:101mm;background:url("logo3.png") center/contain no-repeat!important;opacity:.035;mix-blend-mode:normal!important}
+@media print{#print .hero-logo img{width:100%!important;height:50mm!important;max-width:82mm!important;transform:none!important}}
 </style></head><body>
-<header class="top"><div class="topinner"><img class="toplogo" src="logo2.png" alt="Lisboa Soluções Integradas"><div><h1>Lisboa Soluções Integradas</h1><small>Gerador de Ordem de Serviço</small></div></div></header>
+<header class="top"><div class="topinner"><img class="toplogo" src="logo3.png" alt="Lisboa Soluções Integradas"><div><h1>Lisboa Soluções Integradas</h1><small>Gerador de Ordem de Serviço</small></div></div></header>
 <main class="wrap"><section class="card"><div class="grid">
 <div><label>Nº OS</label><input id="os"></div><div><label>Data</label><input id="date" type="date"></div>
 <div><label>Cliente</label><input id="client"></div><div><label>Tipo</label><select id="type"><option>Residencial</option><option>Comercial</option><option>Empresarial</option><option>Industrial</option></select></div>
@@ -91,7 +98,7 @@
 <section class="card"><h3>Histórico</h3><div id="history"></div></section></main>
 <section id="print"><div class="a4">
 <div class="hero">
- <div class="hero-logo"><img src="logo2.png" alt="Lisboa Soluções Integradas"></div>
+ <div class="hero-logo"><img src="logo3.png" alt="Lisboa Soluções Integradas"></div>
  <div class="hero-right">
   <div class="who"><strong>Marcelo Lisboa</strong><div class="sub">Soluções Integradas</div>☎ &nbsp;(22) 99984-9586<br>✉ &nbsp;marcelolisboa@live.com<br>PIX (celular): (22) 99984-9586</div>
   <div class="slogan">Confiança<br>em cada<br>detalhe</div>
