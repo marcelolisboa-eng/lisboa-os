@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+<rect width="512" height="512" rx="96" fill="#103b29"/>
+<circle cx="256" cy="226" r="150" fill="#fff"/>
+<image href="logo3.png" x="91" y="61" width="330" height="330" preserveAspectRatio="xMidYMid meet"/>
+<text x="256" y="435" text-anchor="middle" font-family="Arial,sans-serif" font-size="45" font-weight="700" fill="#fff">LISBOA OS</text>
+</svg>
