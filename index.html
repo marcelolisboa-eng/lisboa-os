@@ -68,6 +68,17 @@
 #print .hero-logo{padding-right:2mm;min-height:55mm}
 #print .hero-logo img{width:112%;height:57mm;max-width:none;object-fit:contain;object-position:center;mix-blend-mode:multiply}
 #print .a4:after{width:112mm;height:112mm;left:49mm;top:99mm;opacity:.04;mix-blend-mode:multiply}
+<style>
+/* v6 PDF: cabeçalho fiel à referência */
+#print .hero{grid-template-columns:41% 59%;gap:2mm;margin-bottom:2mm;align-items:stretch}
+#print .hero-logo{height:58mm;min-height:58mm;padding:0 2mm 0 0;display:flex;align-items:center;justify-content:center;overflow:hidden}
+#print .hero-logo img{width:116%;height:116%;max-width:none;object-fit:contain;object-position:center;mix-blend-mode:multiply;transform:scale(1.08)}
+#print .hero-right{align-self:center}
+#print .a4:after{width:118mm;height:118mm;left:46mm;top:96mm;opacity:.035;mix-blend-mode:multiply;background-image:url("logo2.png")}
+@media print{
+ #print .hero-logo img{width:116%!important;height:116%!important;max-width:none!important;mix-blend-mode:multiply!important;transform:scale(1.08)!important}
+ #print .a4:after{mix-blend-mode:multiply!important}
+}
 </style></head><body>
 <header class="top"><div class="topinner"><img class="toplogo" src="logo2.png" alt="Lisboa Soluções Integradas"><div><h1>Lisboa Soluções Integradas</h1><small>Gerador de Ordem de Serviço</small></div></div></header>
 <main class="wrap"><section class="card"><div class="grid">
